@@ -1,0 +1,251 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "alice facts",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "alice fact cancelled"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AliceFacts",
+                    "slots": [],
+                    "samples": [
+                        "a alice fact",
+                        "tell me an alice fact",
+                        "give me an alice fact"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetSalesIntent",
+                    "slots": [
+                        {
+                            "name": "beginningsetence",
+                            "type": "BeginningSentenceSlot"
+                        },
+                        {
+                            "name": "endingsentence",
+                            "type": "EndingSentenceSlots"
+                        },
+                        {
+                            "name": "salesverb",
+                            "type": "SalesVerbSlots"
+                        }
+                    ],
+                    "samples": [
+                        "{salesverb}",
+                        "{beginningsetence} {salesverb} {endingsentence}",
+                        "vehicles sold",
+                        "cars sold"
+                    ]
+                },
+                {
+                    "name": "GetTitlesIntent",
+                    "slots": [
+                        {
+                            "name": "beginning_sentence",
+                            "type": "BeginningSentenceSlot"
+                        },
+                        {
+                            "name": "titles_verb",
+                            "type": "TitlesVerbSlot"
+                        },
+                        {
+                            "name": "ending_sentence",
+                            "type": "EndingSentenceSlots"
+                        }
+                    ],
+                    "samples": [
+                        "titles processed",
+                        "titles",
+                        "{titles_verb}",
+                        "{beginning_sentence} {titles_verb} {ending_sentence}"
+                    ]
+                },
+                {
+                    "name": "GetSellThruIntent",
+                    "slots": [
+                        {
+                            "name": "sellthru_verb_slots",
+                            "type": "SellThruVerbSlots"
+                        },
+                        {
+                            "name": "beginning_sentence",
+                            "type": "BeginningSentenceSlot"
+                        },
+                        {
+                            "name": "ending_sentence",
+                            "type": "EndingSentenceSlots"
+                        }
+                    ],
+                    "samples": [
+                        "{sellthru_verb_slots}",
+                        "{beginning_sentence} {sellthru_verb_slots} {ending_sentence}",
+                        "sell through",
+                        "sellthru",
+                        "sell thru"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "SalesVerbSlots",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "cars did we sell"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vehicles sold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cars sold"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "BeginningSentenceSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "tell me how many"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "how many"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tell me"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "EndingSentenceSlots",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "this year"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "last year"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "this week"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "this month"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "last week"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "last month"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yesterday"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "today"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "soon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "now"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "please"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TitlesVerbSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "titles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "titles sent"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "titles scanned"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tiles processed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SellThruVerbSlots",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "sell through"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sell thru"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

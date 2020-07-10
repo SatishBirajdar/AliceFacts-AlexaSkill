@@ -1,0 +1,69 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-CA": {
+          "summary": "Skill for ACV Auctions car sales.",
+          "examplePhrases": [
+            "Alexa open Alice facts",
+            "cars sold"
+          ],
+          "keywords": [
+            "cars",
+            "acvauctions"
+          ],
+          "name": "Alice Facts",
+          "description": "Skill for ACV Auctions car sales.\n\nAlice Facts is a convenient way to get car sales, car titles reports for ACV Auctions executives.\n\nTo start, just say \"Alexa, Alice facts\", \"Alexa, open Alice facts\", \"cars sold yesterday\", \"cars sold last week\", \"how many cars sold last year\" \"titles last week\".\n\nAt anytime, you can stop by saying \"Alexa, cancel\"",
+          "smallIconUri": "file://assets/images/en-CA_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-CA_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Hackathon project",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionMode": "PRIVATE",
+      "distributionCountries": [
+        "CA"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:233226809111:function:d406c807-b6f5-45e8-a87b-c16d1f6fe5a4:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:233226809111:function:d406c807-b6f5-45e8-a87b-c16d1f6fe5a4:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:233226809111:function:d406c807-b6f5-45e8-a87b-c16d1f6fe5a4:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:233226809111:function:d406c807-b6f5-45e8-a87b-c16d1f6fe5a4:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-CA": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
